@@ -26,13 +26,13 @@ nav{
     text-align: center;
 }
 
-
+/* 整個選單連結區塊 */
 #link{
     text-align: center;
     padding: 5px 0;
-   
 }
 
+/* 個別選單連結區塊 */
 #link a{
     color:#1d4872;
     text-decoration: none;
@@ -43,6 +43,7 @@ nav{
     font-size: 0.8em;
 }
 
+/* 選單轉換特效 */
 #link a:hover{
     background-color: #1d4872;
     color:#dbdbdb;
@@ -64,6 +65,12 @@ nav{
     font-weight: 900;
     font-size: 0.7em;
 }
+
+/* #button a img{
+    height:30px;
+    margin: 0 auto;
+    padding: 0 auto;
+} */
 
 #button a:hover{
     background-color: #1d4872;

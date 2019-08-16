@@ -3,17 +3,20 @@ html(lang="zh")
     head
         meta(charset="UTF-8")
         title 日子選物
-        div
-            a(class="logo" href="#")
-                img(src="imgs/logo.png", alt="首頁 logo")
-            div(class="link")
-                nav(id="nav")
+        link(rel="stylesheet", href="style.css")
+    body
+        div(id="inner")
+            img(src="imgs/Logo.png", alt="日子選物logo")
+
+            nav
+                div(id="link")
+                    a(href="#") 最新商品
                     a(href="#") 文具用品
                     a(href="#") 生活收納
                     a(href="#") 美妝保養
                     a(href="#") 品牌總覽
+
         div(id="button")
-            a(href="#") 會員登入
-            a(href="#" class="button-mr")
+            a(href="#" id="icon")
                 img(src="imgs/shopping.png" alt="購物車")  
-    body
+            a(href="#") 會員登入

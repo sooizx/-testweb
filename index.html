@@ -13,23 +13,25 @@
   </head>
   <footer>日子選物&copy;2019</footer>
   <body>
-    <div class="slideshow-container">
+    <div id="banner">
+      <div class="slideshow-container">
 
-      <div class="mySlides">
+        <div class="mySlides">
         <img src="imgs/banner01.jpg" style="width:100%">
-      </div>
+        </div>
     
-      <div class="mySlides">
+        <div class="mySlides">
         <img src="imgs/banner02.jpg" style="width:100%">
-      </div>
+        </div>
     
-      <div class="mySlides">
+        <div class="mySlides">
         <img src="imgs/banner03.jpg" style="width:100%">
+        </div>
+    
+        <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlides(1)">&#10095;</a>
+    
       </div>
-    
-      <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
-      <a class="next" onclick="changeSlides(1)">&#10095;</a>
-    
     </div>
     
 <script>

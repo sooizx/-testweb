@@ -1,3 +1,14 @@
+//- mixin 區塊
+//- 產生標題(英文標題，中文標題)
+//- 產生產品區塊(圖片，產品標題，產品說明)
+mixin product-box(img, tit2, text)
+    div(class="product-box")
+                a(href="#")
+                    img(src="imgs/product01.jpg", alt="產品 照片")
+                    h2 無針釘書機
+                    hr
+                    h2 售價 480 元
+
 <!DOCTYPE html>
 html(lang="zh")
     head
@@ -24,7 +35,10 @@ html(lang="zh")
     footer 日子選物&copy;2019
         
     body
+        div(id="banner")
         
-        
-
-        
+        title("proproduct", "產品介紹")
+        section(id="product-box")
+            +product-box
+            +product-box
+            +product-box

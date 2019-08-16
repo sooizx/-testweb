@@ -92,3 +92,8 @@ footer{
     /* 行高與高度相同：垂直至中，僅限一行內容 */
     line-height: 60px;
 }
+#banner{
+    background-color: #1d4872;
+    width: 100vw;
+    height: 600px;
+}

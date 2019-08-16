@@ -35,8 +35,19 @@ html(lang="zh")
     footer 日子選物&copy;2019
         
     body
-        div(id="banner")
-        
+        div(class="slide-container")
+            span(id="slider-image-1")
+            span(id="slider-image-2")
+            span(id="slider-image-3")
+            div(class="image-container")
+                img(src="imgs/banner01.jpg" class="slider-image")
+                img(src="imgs/banner02.jpg" class="slider-image")
+                img(src="imgs/banner03.jpg" class="slider-image")
+            div(class="button-container")
+            a(href="#slider-image-1" class="slider-button")
+            a(href="#slider-image-2" class="slider-button")
+            a(href="#slider-image-3" class="slider-button")
+
         title("proproduct", "產品介紹")
         section(id="product-box")
             +product-box

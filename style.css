@@ -92,47 +92,30 @@ footer{
     /* 行高與高度相同：垂直至中，僅限一行內容 */
     line-height: 60px;
 }
-.slide-container{
-    width: 1200px;
-    height: 800px;
-}
-
-.image-container{
-    width: 2400px;
-    height: 800px;
+.mySlides {
+    display: none
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
     position: relative;
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-}
-.slider-image{
-    float: left;
-    margin: 0px;
-    padding: 0px;
-}
-
-.button-container{
-    top:-20px;
-    position: relative;
-}
-
-.slider-button{
-    display:inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-#slider-image-1:target .image-container{
-    left: opx;
-}
-
-#slider-image-2:target .image-container{
-    left: -1200px;
-}
-
-#slider-image-3:target .image-container{
-    left: -2400px;
-}
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+  }

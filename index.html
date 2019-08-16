@@ -13,10 +13,47 @@
   </head>
   <footer>日子選物&copy;2019</footer>
   <body>
-    <div class="slide-container"><span id="slider-image-1"></span><span id="slider-image-2"></span><span id="slider-image-3"></span>
-      <div class="image-container"><img class="slider-image" src="imgs/banner01.jpg"/><img class="slider-image" src="imgs/banner02.jpg"/><img class="slider-image" src="imgs/banner03.jpg"/></div>
-      <div class="button-container"></div><a class="slider-button" href="#slider-image-1"></a><a class="slider-button" href="#slider-image-2"></a><a class="slider-button" href="#slider-image-3"></a>
+    <div class="slideshow-container">
+
+      <div class="mySlides">
+        <img src="imgs/banner01.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <img src="imgs/banner02.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <img src="imgs/banner03.jpg" style="width:100%">
+      </div>
+    
+      <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlides(1)">&#10095;</a>
+    
     </div>
+    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function changeSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+var slides = document.getElementsByClassName("mySlides");
+
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+
+for (var i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+
+slides[slideIndex-1].style.display = "block";  
+}
+</script>
+
     <title proproduct="proproduct" 產品介紹="產品介紹"></title>
     <section id="product-box">
       <div class="product-box"><a href="#"><img src="imgs/product01.jpg" alt="產品 照片"/>

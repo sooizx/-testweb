@@ -37,7 +37,7 @@ nav{
     color:#1d4872;
     text-decoration: none;
     /* 內距：上下 左右 */
-    padding: 3px 50px;
+    padding: 3px 90px;
     /* 字體粗細 0 - 900 */
     font-weight: 900;
     font-size: 0.8em;
@@ -51,12 +51,22 @@ nav{
 
 /* 按扭區塊 */
 #button {
-    text-align: right;
     float: right;
     height:10px;
-    text-decoration: none;
 }
 
-#icon{
-    height:10px;
+#button a{
+    color:#1d4872;
+    text-decoration: none;
+    /* 內距：上下 左右 */
+    padding: 3px 20px;
+    /* 字體粗細 0 - 900 */
+    font-weight: 900;
+    font-size: 0.7em;
+}
+
+#button a:hover{
+    background-color: #1d4872;
+    color:#dbdbdb;
+    transition: 0.6s;
 }

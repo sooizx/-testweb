@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     font-family: 微軟正黑體;
-    border: 0.2px solid rgba(255, 0, 0, 0.2);
+    border: 0.2px solid rgba(255, 0, 0, 0);
     color:black;
 }
 
 /* 按扭區塊 */
-#button {
+#button{
     float: right;
 }
 
@@ -16,45 +16,34 @@
     color:#1d4872;
     text-decoration: none;
     /* 內距：上下 左右 */
-    padding: 5px 10px;
+    padding: 0px 10px;
     /* 字體粗細 0 - 900 */
     font-weight: 900;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
-/* #button a img{
-    height:25px;
-    margin: 0 auto;
-    padding: 0 auto;
+ /* #button a img{
+    height:20px;
+    padding: 0px 5px;
 }  */
 
 #button a:hover{
-    background-color: #1d4872;
-    color:#dbdbdb;
-    transition: 0.6s;
+    color:#1d4772b6;
+    transition: 0.4s;
 }
-
-#nav{
-    background-color: #fff;
-    width: 100vw;
-    height: 200px;
-    text-align:center;
-    margin: 25px auto;
-    padding: o auto;
-}
-
-/* .icon{
-    width: 23px;
-} */
-
-.logo{
-    width: 300px;
-}
-
 /* 導覽列區塊 */
 nav{
+    background-color:#fff;
     width: 100vw;
+    height: 200px;
     text-align: center;
+    margin: 22px auto;
+    padding: 0px auto;
+}
+
+.logo{
+    width:300px;
+    vertical-align : middle;
 }
 
 /* 整個選單連結區塊 */
@@ -101,7 +90,8 @@ footer{
 #banner{
     background-color:#1d4872;
     width: 100vw;
-    height: 500px;
+    height: 425px;
+    margin: 0 auto;
 }
 
 .mySlides {
@@ -110,7 +100,7 @@ footer{
   
   /* Slideshow container */
   .slideshow-container {
-    max-width: 750px;
+    max-width: 1100px;
     position: relative;
     margin: auto;
   }
@@ -122,7 +112,7 @@ footer{
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color:#1d4872;
+    color:#000000;
     font-weight: bold;
     font-size: 18px;
   }
@@ -131,12 +121,14 @@ footer{
   .next {
     right: 0;
   }
+
 /* 標題區塊 */
 .title-box {
     text-align: center;
+    margin: 10px 0; 
 }
 .title {
-    font-size:10px;
+    font-size:14px;
     margin: 10px 0;
     padding: 5px 0;
 }
@@ -152,7 +144,7 @@ footer{
 }
 
 .title-box h1 {
-    font-size:8px;
+    font-size:10px;
     color:#1d4872;
 }
   /* 產品區塊 */
@@ -180,25 +172,27 @@ footer{
 /* 產品盒子 */
 .product-box a {
     text-decoration: none;
-    text-align: center;
+    text-align:left;
 
 }
 .product-box h2 {
     color:#1d4872;
     letter-spacing: 3px;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    font-weight:900;
 }
 
-.product-box hr {
-    height: 1.2px;
+/* .product-box hr {
+    height: 1px;
     background-color:#dbdbdb;
     border: 0;
     margin: 5px 0;
-}
+} */
 
 .product-box p {
-    color: #1d4872;
-    font-size: 0.8em;
-    padding: 0;
-    line-height: 1.8;
+    color:#1d4772b6;
+    font-size:0.8em;
+    padding:0;
+    line-height:1.8;
+    font-weight:900;
 }

@@ -1,13 +1,12 @@
 //- mixin 區塊
 //- 產生標題(英文標題，中文標題)
 //- 產生產品區塊(圖片，產品標題，產品說明)
-mixin product-box(img, tit2, text)
+mixin product-box(img, tit2, price)
     div(class="product-box")
                 a(href="#")
                     img(src="imgs/" + img + ".jpg", alt="產品 照片") 
                     h2=tit2
-                    hr
-                    p=text 
+                    p=price 
 //- mixin 區塊
 //- 產生標題(大標題，敘述)
 mixin title(bigtitle,depiction)
@@ -24,7 +23,7 @@ html(lang="zh")
         link(rel="stylesheet", href="style.css")
         
     body
-        include nav.pug
+        include nav.html
         include banner.html
         +title("本週最新商品 ", "單筆滿1500免運！24HR出貨")
         section(id="product")

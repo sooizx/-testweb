@@ -101,7 +101,7 @@ footer{
 #banner{
     background-color:#1d4872;
     width: 100vw;
-    height: 400px;
+    height: 500px;
 }
 
 .mySlides {
@@ -110,7 +110,7 @@ footer{
   
   /* Slideshow container */
   .slideshow-container {
-    max-width: 600px;
+    max-width: 750px;
     position: relative;
     margin: auto;
   }
@@ -137,6 +137,7 @@ footer{
 }
 .title {
     font-size:10px;
+    margin: 10px 0;
     padding: 5px 0;
 }
 
@@ -165,7 +166,7 @@ footer{
 
     padding: 30px;
 
-    width: 920px;
+    width: 1080px;
 
     margin: 0 auto;
 
@@ -173,7 +174,7 @@ footer{
 }
 
 #product img {
-    width: 270px;
+    width: 330px;
 }
 
 /* 產品盒子 */

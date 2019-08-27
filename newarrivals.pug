@@ -1,5 +1,3 @@
-//- mixin 區塊
-
 //- 產生產品區塊(圖片，產品標題，產品說明)
 mixin product-box(img, tit2, price)
     div(class="product-box")
@@ -14,7 +12,6 @@ mixin title(bigtitle,depiction)
         h2(class="title")=bigtitle
         h1=depiction
 
-
 <!DOCTYPE html>
 html(lang="zh")
     head
@@ -22,10 +19,8 @@ html(lang="zh")
         title 日子選物
         link(rel="stylesheet", href="style.css")
         link(rel="shortcut icon", href="imgs/favicon.png", type="image/x-icon")
-        
     body
         include nav.html
-        include banner.html
         +title("本週最新商品 ", "單筆滿1500免運！24HR出貨")
         section(id="product")
             +product-box("product01", "無針釘書機", "NT$480元")
@@ -38,4 +33,3 @@ html(lang="zh")
             +product-box("product08", "J.Hannah 指甲油 (RELIC)", "NT$650元")
             +product-box("product09", "J.Hannah 指甲油 (HEPWORTH)", "NT$650元")
         include footer.pug
-   

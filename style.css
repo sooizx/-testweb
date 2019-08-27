@@ -177,14 +177,14 @@ footer{
     text-decoration: none;
 }
 .product-box h2 {
-    color: #1d4872;
+    color:#1d4872;
     letter-spacing: 3px;
     font-size: 0.8em;
 }
 
 .product-box hr {
-    height: 2px;
-    background-color:#3b332d;
+    height: 1.2px;
+    background-color:#dbdbdb;
     border: 0;
     margin: 5px 0;
 }
@@ -192,6 +192,6 @@ footer{
 .product-box p {
     color: #1d4872;
     font-size: 0.8em;
-    padding: 5px 0;
+    padding: 0;
     line-height: 1.8;
 }

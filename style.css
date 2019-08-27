@@ -196,3 +196,70 @@ footer{
     line-height:1.8;
     font-weight:900;
 }
+/* 登入表單 */
+/* 登入表單 */
+#login{
+    margin: 50px auto;
+    width: 500px;
+    height: 300px;
+}
+.sginup{
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+.join{
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  
+  form {
+    background-color:#fff;
+    width: 450px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  
+  body{
+    background-color:#fff;
+  }
+  
+  #name,#email,#password,#job,#introduction{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    height: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 10px;
+    }
+  
+  fieldset {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+  }
+  
+  
+  .btn{
+    background-color:black;
+    margin: 10px auto;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration: none;
+    }
+  /* 預留文字 */
+  ::placeholder{
+    color:#black
+  }
+  

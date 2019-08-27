@@ -4,10 +4,17 @@
 mixin product-box(img, tit2, text)
     div(class="product-box")
                 a(href="#")
-                    img(src="imgs/product01.jpg", alt="產品 照片")
-                    h2 無針釘書機
+                    img(src="imgs/" + img + ".jpg", alt="產品 照片") 
+                    h2=tit2
                     hr
-                    h2 售價 480 元
+                    p=text 
+//- mixin 區塊
+//- 產生標題(大標題，敘述)
+mixin title(bigtitle,depiction)
+    div(class="title-box")
+        h2(class="title")=bigtitle
+        h1=depiction
+
 
 <!DOCTYPE html>
 html(lang="zh")
@@ -16,6 +23,7 @@ html(lang="zh")
         title 日子選物
         link(rel="stylesheet", href="style.css")
         
+    body
         div(id="button")
             //- a(href="#")
             //- img(src="imgs/shopping.png" alt="購物車")  
@@ -23,20 +31,26 @@ html(lang="zh")
             a(href="#") 會員登入
 
         div(id="inner")
-            img(src="imgs/logo.png", alt="日子選物logo")
-
             nav
-                div(id="link")
+                a(href="index.html")
+                    img(src="imgs/logo.png", alt="日子選物logo" class="logo")
+
+        
+                div(class="link")
                     a(href="#") 最新商品
                     a(href="#") 文具用品
                     a(href="#") 生活收納
                     a(href="#") 美妝保養
                     a(href="#") 品牌總覽
-    footer 日子選物&copy;2019
-        
-    body
-        title("proproduct", "產品介紹")
-        section(id="product-box")
-            +product-box
-            +product-box
-            +product-box
+        +title("選物編輯室本週推薦 ", "單筆滿1500免運！24HR出貨")
+        section(id="product")
+            +product-box("product01", "無針釘書機", "NT$480元")
+            +product-box("product02", "右手超人造型印章", "NT$480元")
+            +product-box("product03", "Plastic Farm手提網袋", "NT$780元")
+            +product-box("product04", "商人藝術家 手錶（米）", "NT$1,880元")
+            +product-box("product05", "商人藝術家 手錶（藍）", "NT$1,880元")
+            +product-box("product06", "商人藝術家 手錶（金屬）", "NT$2,080元")
+            +product-box("product07", "J.Hannah 指甲油 (SALTILLO)", "NT$650元")
+            +product-box("product08", "J.Hannah 指甲油 (RELIC)", "NT$650元")
+            +product-box("product09", "J.Hannah 指甲油 (HEPWORTH)", "NT$650元")
+    footer 2019 © 日子選物. ALL RIGHTS RESERVED.

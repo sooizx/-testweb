@@ -43,7 +43,7 @@
     padding: o auto;
 }
 
-#inner img{
+.logo{
     width: 300px;
 }
 
@@ -54,13 +54,13 @@ nav{
 }
 
 /* 整個選單連結區塊 */
-#link{
+.link{
     text-align: center;
     padding: 5px 0;
 }
 
 /* 個別選單連結區塊 */
-#link a{
+.link a{
     color:#1d4872;
     text-decoration: none;
     /* 內距：上下 左右 */
@@ -71,7 +71,7 @@ nav{
 }
 
 /* 選單轉換特效 */
-#link a:hover{
+.link a:hover{
     background-color: #1d4872;
     color:#dbdbdb;
     transition: 0.6s;
@@ -80,7 +80,7 @@ nav{
 footer{
     font-weight: 500;
     font-size: 0.8em;
-    color:#1d4872;
+    color:#7f8d99;
     background-color: #f2f4f2;
     /* 定位：固定 psf */
     position: fixed;
@@ -127,3 +127,71 @@ footer{
   .next {
     right: 0;
   }
+/* 標題區塊 */
+.title-box {
+    text-align: center;
+}
+.title {
+    font-size:10px;
+    padding: 5px 0;
+}
+
+.title::before {
+    content: "＼";
+    padding-right: 20px;
+}
+
+.title::after {
+    content: "／";
+    padding-left: 20px;
+}
+
+.title-box h1 {
+    font-size:8px;
+    color:#1d4872;
+}
+  /* 產品區塊 */
+#product {
+    /* 顯示模式：格線 */
+    display: grid;
+    /* 格線-框架-欄位：欄位尺寸 欄位尺寸 欄位尺寸 */
+    grid-template-columns: auto auto auto;
+    /* 格線-間隙 */
+    grid-gap: 50px;
+
+    padding: 30px;
+
+    width: 920px;
+
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+#product img {
+    width: 270px;
+}
+
+/* 產品盒子 */
+.product-box a {
+    text-decoration: none;
+}
+.product-box h2 {
+    color: #1d4872;
+    letter-spacing: 3px;
+    font-size: 0.8em;
+}
+
+.product-box hr {
+    height: 2px;
+    background-color:#3b332d;
+    border: 0;
+    margin: 5px 0;
+}
+
+.product-box p {
+    color: #1d4872;
+    font-size: 0.8em;
+    padding: 5px 0;
+    line-height: 1.8;
+}

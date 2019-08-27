@@ -4,72 +4,56 @@
     <meta charset="UTF-8"/>
     <title>日子選物</title>
     <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
     <div id="button"><a href="#">購物車</a><a href="#">會員登入</a></div>
-    <div id="inner"><img src="imgs/logo.png" alt="日子選物logo"/>
-      <nav>
-        <div id="link"><a href="#">最新商品</a><a href="#">文具用品</a><a href="#">生活收納</a><a href="#">美妝保養</a><a href="#">品牌總覽</a></div>
+    <div id="inner">
+      <nav><a href="index.html"><img class="logo" src="imgs/logo.png" alt="日子選物logo"/></a>
+        <div class="link"><a href="#">最新商品</a><a href="#">文具用品</a><a href="#">生活收納</a><a href="#">美妝保養</a><a href="#">品牌總覽</a></div>
       </nav>
     </div>
-  </head>
-  <footer>日子選物&copy;2019</footer>
-  <body>
-    <div id="banner">
-      <div class="slideshow-container">
-
-        <div class="mySlides">
-        <img src="imgs/banner01.jpg" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-        <img src="imgs/banner02.jpg" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-        <img src="imgs/banner03.jpg" style="width:100%">
-        </div>
-    
-        <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlides(1)">&#10095;</a>
-    
-      </div>
+    <div class="title-box">
+      <h2 class="title">選物編輯室本週推薦 </h2>
+      <h1>單筆滿1500免運！24HR出貨</h1>
     </div>
-    
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function changeSlides(n) {
-showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-var slides = document.getElementsByClassName("mySlides");
-
-if (n > slides.length) {slideIndex = 1}
-if (n < 1) {slideIndex = slides.length}
-
-for (var i = 0; i < slides.length; i++) {
-slides[i].style.display = "none";  
-}
-
-slides[slideIndex-1].style.display = "block";  
-}
-</script>
-
-    <title proproduct="proproduct" 產品介紹="產品介紹"></title>
-    <section id="product-box">
+    <section id="product">
       <div class="product-box"><a href="#"><img src="imgs/product01.jpg" alt="產品 照片"/>
           <h2>無針釘書機</h2>
           <hr/>
-          <h2>售價 480 元</h2></a></div>
-      <div class="product-box"><a href="#"><img src="imgs/product01.jpg" alt="產品 照片"/>
-          <h2>無針釘書機</h2>
+          <p>NT$480元</p></a></div>
+      <div class="product-box"><a href="#"><img src="imgs/product02.jpg" alt="產品 照片"/>
+          <h2>右手超人造型印章</h2>
           <hr/>
-          <h2>售價 480 元</h2></a></div>
-      <div class="product-box"><a href="#"><img src="imgs/product01.jpg" alt="產品 照片"/>
-          <h2>無針釘書機</h2>
+          <p>NT$480元</p></a></div>
+      <div class="product-box"><a href="#"><img src="imgs/product03.jpg" alt="產品 照片"/>
+          <h2>Plastic Farm手提網袋</h2>
           <hr/>
-          <h2>售價 480 元</h2></a></div>
+          <p>NT$780元</p></a></div>
+      <div class="product-box"><a href="#"><img src="imgs/product04.jpg" alt="產品 照片"/>
+          <h2>商人藝術家 手錶（米）</h2>
+          <hr/>
+          <p>NT$1,880元</p></a></div>
+      <div class="product-box"><a href="#"><img src="imgs/product05.jpg" alt="產品 照片"/>
+          <h2>商人藝術家 手錶（藍）</h2>
+          <hr/>
+          <p>NT$1,880元</p></a></div>
+      <div class="product-box"><a href="#"><img src="imgs/product06.jpg" alt="產品 照片"/>
+          <h2>商人藝術家 手錶（金屬）</h2>
+          <hr/>
+          <p>NT$2,080元</p></a></div>
+      <div class="product-box"><a href="#"><img src="imgs/product07.jpg" alt="產品 照片"/>
+          <h2>J.Hannah 指甲油 (SALTILLO)</h2>
+          <hr/>
+          <p>NT$650元</p></a></div>
+      <div class="product-box"><a href="#"><img src="imgs/product08.jpg" alt="產品 照片"/>
+          <h2>J.Hannah 指甲油 (RELIC)</h2>
+          <hr/>
+          <p>NT$650元</p></a></div>
+      <div class="product-box"><a href="#"><img src="imgs/product09.jpg" alt="產品 照片"/>
+          <h2>J.Hannah 指甲油 (HEPWORTH)</h2>
+          <hr/>
+          <p>NT$650元</p></a></div>
     </section>
   </body>
+  <footer>2019 © 日子選物. ALL RIGHTS RESERVED.</footer>
 </html>

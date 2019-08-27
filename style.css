@@ -180,6 +180,8 @@ footer{
 /* 產品盒子 */
 .product-box a {
     text-decoration: none;
+    text-align: center;
+
 }
 .product-box h2 {
     color:#1d4872;

@@ -24,24 +24,8 @@ html(lang="zh")
         link(rel="stylesheet", href="style.css")
         
     body
-        div(id="button")
-            //- a(href="#")
-            //- img(src="imgs/shopping.png" alt="購物車")  
-            a(href="#") 購物車
-            a(href="#") 會員登入
-
-        div(id="inner")
-            nav
-                a(href="index.html")
-                    img(src="imgs/logo.png", alt="日子選物logo" class="logo")
-
-        
-                div(class="link")
-                    a(href="#") 最新商品
-                    a(href="#") 文具用品
-                    a(href="#") 生活收納
-                    a(href="#") 美妝保養
-                    a(href="#") 品牌總覽
+        include nav.pug
+        include banner.html
         +title("本週嚴選商品 ", "單筆滿1500免運！24HR出貨")
         section(id="product")
             +product-box("product01", "無針釘書機", "NT$480元")
@@ -53,4 +37,5 @@ html(lang="zh")
             +product-box("product07", "J.Hannah 指甲油 (SALTILLO)", "NT$650元")
             +product-box("product08", "J.Hannah 指甲油 (RELIC)", "NT$650元")
             +product-box("product09", "J.Hannah 指甲油 (HEPWORTH)", "NT$650元")
-    footer 2019 © 日子選物. ALL RIGHTS RESERVED.
+        include footer.pug
+   

@@ -290,7 +290,7 @@ fieldset {
     width: 180px;
     height:30px;
     padding: 5px 10px;
-    
+    border: 1px solid #b3bcc5;
 }
 
 #form-element{
@@ -298,11 +298,11 @@ fieldset {
     background-color:#1d4872;
     margin: 10px 5px;
     padding: 10px 15px;
-    border: 1px solid #b3bcc5;
+    border: 1px solid #1d4872;
     border-radius: 5px;
     color:#fff;
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 800;
     text-decoration: none;
 }
 

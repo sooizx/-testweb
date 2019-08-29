@@ -346,3 +346,73 @@ fieldset {
   display: block;
 }
 /* 聯絡我們區塊 */
+#member{
+  margin: 50px auto;
+  width: 500px;
+  height:650px;
+}
+
+.memberonly{
+  color: #1d4872;
+  padding: 15px 0px;
+  margin:5px 30px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+label {
+  font-size: 16px;
+}
+
+.contactus-form {
+  background-color:#fff;
+  width: 550px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1.3px solid #1d4772b6;
+  border-radius: 15px;
+}
+
+#email,#name,#phone{
+  width: 100%;
+  background-color:#fff;
+  margin: 15px 0;
+  height: 30px;
+  border: 1px solid #1d4872;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border-radius: 5px;
+  }
+
+#message{
+  width: 100%;
+  background-color:#fff;
+  margin: 15px 0;
+  border: 1px solid #1d4872;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+ 
+fieldset {
+  border: 2px solid #1d4872;
+  margin: 10px 0;
+}
+
+.btn{
+  background-color:#1d4872;
+  margin: 10px auto;
+  padding: 10px 30px;
+  border: 1px solid #1d4872;
+  border-radius: 5px;
+  color:#fff;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  }
+/* 預留文字 */
+::placeholder{
+  color:#ccc
+}

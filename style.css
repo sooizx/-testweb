@@ -182,8 +182,14 @@ nav{
 /* 登入表單 */
 #login{
   margin: 50px auto;
-  width: 500px;
-  height: 800px;
+  width: 1280px;
+  height: 500px;
+  display: grid;
+  grid-template-columns:50% 50%;
+}
+
+.login-box{
+  height: 400px;
 }
 
 .sginup{

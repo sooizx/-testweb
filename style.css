@@ -332,6 +332,7 @@ fieldset {
   height: 30px;
   font-size: 0.5em;
   text-align: center;
+  padding:0px;
   color:#7f8d99;
   /* 行高與高度相同：垂直至中，僅限一行內容 */
   line-height: 15px;

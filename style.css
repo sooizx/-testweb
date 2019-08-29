@@ -247,7 +247,7 @@ fieldset {
   /* footer */
   #footer{
     width: 100vw;
-    height: 300px;
+    height: 250px;
     background-color:#f2f4f2;
     margin-top: 50px;
 }
@@ -300,9 +300,11 @@ fieldset {
 }  
 
  .form-box{
+  width: 350px;
   height: 0px;
   border: none;
-  
+  background-color:transparent;
+  padding-top:0px;
  }
 
 #form-email{
@@ -328,7 +330,6 @@ fieldset {
 #copyright {
   width: 100%;
   height: 30px;
-  padding-top: 220px;
   font-size: 0.5em;
   text-align: center;
   color:#7f8d99;

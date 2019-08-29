@@ -181,9 +181,9 @@ nav{
 }
 /* 登入表單 */
 #login{
-  margin: 50px auto;
+  margin: 150px auto;
   width: 1280px;
-  height: 500px;
+  height: 600px;
   display: grid;
   grid-template-columns:50% 50%;
 }
